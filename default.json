@@ -1,0 +1,36 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":configMigration",
+    ":dependencyDashboard",
+    ":gitSignOff",
+    ":prConcurrentLimitNone",
+    ":renovatePrefix",
+    ":semanticCommitsDisabled",
+    "helpers:githubDigestChangelogs",
+    "helpers:pinGitHubActionDigests",
+    "schedule:weekly",
+    "workarounds:all"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "minimumReleaseAge": "5 days",
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "@cerbos/*",
+        "cerbos",
+        "cerbosctl",
+        "github.com/cerbos/**"
+      ],
+      "minimumReleaseAge": null
+    }
+  ],
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths",
+    "npmDedupe",
+    "pnpmDedupe"
+  ]
+}
