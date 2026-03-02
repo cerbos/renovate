@@ -21,6 +21,7 @@
     {
       "matchPackageNames": [
         "@cerbos/*",
+        "cerbos/*",
         "cerbos",
         "cerbosctl",
         "github.com/cerbos/**"
