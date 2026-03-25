@@ -14,7 +14,8 @@
     "workarounds:all"
   ],
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "commitMessageExtra": "({{manager}})"
   },
   "minimumReleaseAge": "5 days",
   "packageRules": [
