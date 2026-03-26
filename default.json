@@ -8,6 +8,7 @@
     ":renovatePrefix",
     ":semanticCommitsDisabled",
     ":separateMultipleMajorReleases",
+    "docker:pinDigests",
     "helpers:githubDigestChangelogs",
     "helpers:pinGitHubActionDigests",
     "schedule:weekly",
