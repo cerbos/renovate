@@ -21,6 +21,11 @@
   "minimumReleaseAge": "5 days",
   "packageRules": [
     {
+      "matchManagers": ["gomod"],
+      "matchDepTypes": ["indirect"],
+      "enabled": true
+    },
+    {
       "matchPackageNames": [
         "@cerbos/*",
         "cerbos/*",
