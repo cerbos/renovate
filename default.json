@@ -26,6 +26,12 @@
       "enabled": true
     },
     {
+      "matchManagers": ["gomod"],
+      "matchDepTypes": ["indirect"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
       "matchPackageNames": [
         "@cerbos/*",
         "cerbos/*",
