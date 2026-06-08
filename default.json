@@ -14,6 +14,7 @@
     "schedule:weekly",
     "workarounds:all"
   ],
+  "groupSingleUpdates": false,
   "lockFileMaintenance": {
     "enabled": true,
     "commitMessageExtra": "({{manager}})"
